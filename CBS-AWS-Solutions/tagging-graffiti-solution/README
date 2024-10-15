@@ -1,0 +1,17 @@
+WARNING: DO NOT UPGRADE ARRAY AFTER DEPLOYMENT - fix is being worked out
+
+Step 1: Download desired formation template
+Step 2: Add desired tags to a yaml file. See example_tags.yaml for formatting guidance
+Step 3: run the python script as such
+
+python add_customer_tags.py -h
+usage: add_customer_tags.py [-h] [--cft CFT] [--tags TAGS] [--output OUTPUT]
+
+Add tags to a cloudformation template
+
+optional arguments:
+  -h, --help       show this help message and exit
+  --cft CFT        The path to the unedited cloudformation template
+  --tags TAGS      The path to the yaml key value file containing the tags to
+                   add
+  --output OUTPUT  The path to the new modified template
